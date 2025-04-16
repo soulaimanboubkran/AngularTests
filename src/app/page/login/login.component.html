@@ -1,0 +1,16 @@
+<p>login works!</p>
+@for (item of domaineItems(); track item.id){
+    <div class="card">
+        <h2>{{item.name}}</h2>
+        <p>{{item.description}}</p>
+        <button >Select</button>
+    </div>
+}
+
+@for(todo of todoItems(); track todo.id){
+    <div class="card">
+        <h2>{{todo.title}}</h2>
+        <p>{{todo.body}}</p>
+        <button >Select</button>
+    </div>
+}
