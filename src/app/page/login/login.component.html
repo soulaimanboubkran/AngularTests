@@ -6,7 +6,9 @@
         <button >Select</button>
     </div>
 }
-
+@if(!todoItems().length){
+    <p>loading ... </p>
+}
 @for(todo of todoItems(); track todo.id){
     <div class="card">
         <h2>{{todo.title}}</h2>
